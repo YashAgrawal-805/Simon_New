@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "myFont";
+    src: url('/home/kavi/Desktop/Webdev/Work/GAME/PressStart2P.ttf');
+}
+html, body {
+    overflow: hidden;
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+    background-color: #061c39;
+}
+h1{
+    text-align: center;
+    font-family: myFont;
+    font-size: 3.5vh;
+    margin:  5%;
+    margin-bottom: 12vh;
+    color: #FEF2BF;
+}
+.Start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: magenta;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:black ;
+    border-width: 3px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 600px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.item{
+    margin-inline:25px;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 3em/3em;
+    
+}
+
+.button-1{
+    background-color: #0b7506;
+}
+
+
+.button-2{
+    background-color: #fe0104;
+}
+
+
+.button-3{
+    background-color: #fdfe01;
+}
+
+
+.button-4{
+    background-color: #2400fe;
+}
+
+.button-new{
+    background-color: gray;
+    box-shadow: 0px 0px 4px 4px  white;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 570px;
+        width: 600px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .item {
+        margin-inline: 0px;
+        margin-bottom: 5px;
+        background-color: rgb(0, 0, 0);
+        width: 300px;
+        height: 90px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: black;
+        border-radius: 3em/3em;
+    }
+    .button-1{
+        background-color: #0b7506;
+    }
+    
+    
+    .button-2{
+        background-color: #fe0104;
+    }
+    
+    
+    .button-3{
+        background-color: #fdfe01;
+    }
+    
+    
+    .button-4{
+        background-color: #2400fe;
+    }
+    
+    .button-new{
+        background-color: gray;
+        box-shadow: 0px 0px 4px 4px  white;
+    }
+}
+
+@media (min-height: 500px) and (max-height: 800px){
+    h1{
+        text-align: center;
+        font-family: myFont;
+        font-size: 3.5vh;
+        margin:  5%;
+        margin-bottom: 5vh;
+        color: #FEF2BF;
+    }
+}
