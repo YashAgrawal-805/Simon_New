@@ -28,12 +28,12 @@ function problem_generator(level_number) {
     return input;
 }
 
-if (document.querySelector("h1").textContent === "Press A key to Start Game") {
+if (document.querySelector("h1").textContent === "Press START to play game") {
     document.querySelector(".Start").addEventListener("click", function (event) {
         level_number = 1;
         var audio = new Audio("button-1.mp3");
         audio.play();
-        document.querySelector("h1").textContent = "LEVEL - " + level_number;
+        document.querySelector("h1").innerHTML = "LEVEL - " + level_number+"<br>WAIT TILL PATTERN IS GENERATING";
         var input = problem_generator(level_number);
         var output = [];
         var items = document.querySelectorAll(".item"); // Cache the items
@@ -49,7 +49,7 @@ if (document.querySelector("h1").textContent === "Press A key to Start Game") {
                     output.push(index);
                     if (arraysMatch(input, output)) {
                         level_number = level_number + 1;
-                        document.querySelector("h1").textContent = "LEVEL - " + level_number;
+                        document.querySelector("h1").innerHTML = "LEVEL - " + level_number+"<br>WAIT TILL PATTERN IS GENERATING";
                         console.log(input + "/" + output);
                     }
                     if (input.length === output.length) {
